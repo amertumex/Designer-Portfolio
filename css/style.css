@@ -43,6 +43,9 @@ h6 {
 }
 
 .header {
+    position: sticky;
+  top: 0;
+  z-index: 100;
   backdrop-filter: blur(20px);
   background: rgba(50, 50, 50, 0.7);
   padding: 10px 0;
@@ -72,9 +75,9 @@ h6 {
   font-size: 18px;
 }
 
-/* hero sec */
+/* hero section */
 .hero__section {
-  padding: 130px;
+  padding: 130px 0 80px;
 }
 .hero__section .container {
   display: flex;
@@ -89,7 +92,7 @@ h6 {
 }
 
 .hero__title {
-  max-width: 430px;
+  max-width: 390px;
   font-size: 54px;
   line-height: 119%;
   letter-spacing: -0.01em;
@@ -112,13 +115,12 @@ h6 {
 
   border-radius: 50%;
   object-fit: cover;
-  
 }
 
 .btn {
   max-width: 300px;
   border-radius: 4px;
-  padding: 15px 15px;
+  padding: 15px;
   background: #9d9d9d;
   font-size: 20px;
   color: #fff;
@@ -128,10 +130,16 @@ h6 {
   justify-content: center;
   gap: 5px;
 
-
   margin-bottom: 145px;
-}
 
+  transition: transform 300ms ease-in-out, color 300ms ease-in-out;
+
+}
+.btn:hover {
+  color: #202020;
+  transform: scale(1.1);
+  
+}
 .arrow {
   display: flex;
   align-items: center;
